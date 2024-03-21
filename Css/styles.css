@@ -1,0 +1,187 @@
+/*Imagenes*/
+
+*{
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-width: 100%; 
+    max-height: 500px;
+    padding-left: 10px; 
+    padding-right: 10px; 
+    padding-bottom: 10px; 
+    padding-top: 0px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.container-image {
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 10px; 
+    margin-top: 20px; 
+}
+.container-image-index{
+    text-align: center;
+    display: flexbox;
+    flex-wrap: wrap;
+
+
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+  }
+  
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .gallery::after {
+    content: "";
+    width: 350px;
+  }
+
+
+/*Botones*/
+
+.container-buttons{
+    margin:0;
+    padding: 20px;
+    text-align: center;
+}
+
+.boton {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #57b846;
+    color:#fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #3e8f32;
+}
+
+
+/*Cabecera */
+.head {
+    text-align: center;
+    padding: auto;
+    background-color:#eff0f7f8;
+    padding: 20px 0;
+}
+/*Cuerpo */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px; 
+    padding: 10px; 
+    text-align: center;
+    padding: auto;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1,h2,h3{
+    color: #812d31;
+    font-weight: bold; 
+    margin-top: 30px; 
+    margin-bottom: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 16px; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    color:#666;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Pie de pagina*/
+.container-foot {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px; 
+}
+
+.img-foot {
+    max-width: 100%; 
+    max-height: 150px;
+    padding: 0px;
+}
+
+footer {
+    background-color: #eff0f7f8;
+    padding: 20px 0;
+}
+
+
+/*Links de Navegacion*/
+
+a {
+    text-decoration: none;
+    color: #812d31;
+    font-weight: bold;
+
+}
+
+a:hover {
+    color: #666;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav-links a {
+    margin-right: 10px; /* Cambiado de 20px a 10px */
+}
+
+
+
+.content img {
+    margin: 5px; 
+}
+
+/* Reglas de medios para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    img {
+        padding-left: 5px;
+        padding-right: 5px; 
+        padding-bottom: 5px; 
+    }
+    .container-image {
+        margin-top: 10px; 
+    }
+    .gallery {
+        gap: 10px; 
+    }
+    .nav-links a {
+        margin-right: 5px; 
+    }
+    .content img {
+        margin: 3px; 
+    }
+}
